@@ -1,10 +1,18 @@
+import styled from "styled-components";
 import BoxWithClassName from "../components/BoxWithClassName/BoxWithClassName.js";
+import BoxWithStyledComponents from "@/components/BoxWithStyledComponents/BoxWithStyledComponents.js";
+
+const FlexWrapper = styled.div`
+  display: flex;
+`;
 
 export default function HomePage() {
   return (
-    <div>
+    <FlexWrapper>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
-    </div>
+      <BoxWithStyledComponents $isBlack={true} />
+      <BoxWithStyledComponents $isBlack={false} />
+    </FlexWrapper>
   );
 }
