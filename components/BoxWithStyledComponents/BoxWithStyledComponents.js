@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledBox = styled.div`
+export default styled.div`
     width: 100px;
     height: 100px;
     background-color: ${(props) => (props.$isBlack ? "green" : "black")};
@@ -10,7 +10,17 @@ const StyledBox = styled.div`
     }
 `;
 
-export default function BoxWithStyledComponents({ $isBlack }) {
-  return <StyledBox $isBlack={$isBlack}>
-  </StyledBox>
-}
+// const StyledBox = styled.div`
+//     width: 100px;
+//     height: 100px;
+//     background-color: ${(props) => (props.$isBlack ? "green" : "black")};
+//     margin: 2rem;
+//       &:hover {
+//         background-color: red;
+//     }
+// `;
+
+// export default function BoxWithStyledComponents({ $isBlack }) {
+//   return <StyledBox $isBlack={$isBlack}>
+//   </StyledBox>
+// }
