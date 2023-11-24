@@ -11,7 +11,7 @@ export default function HomePage() {
     <FlexWrapper>
       <BoxWithClassName />
       <BoxWithClassName isBlack />
-      <BoxWithStyledComponents $isBlack={true} />
+      <BoxWithStyledComponents $isBlack />
       <BoxWithStyledComponents $isBlack={false} />
     </FlexWrapper>
   );
